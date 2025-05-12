@@ -42,7 +42,7 @@ function listarTarefas() {
         ToDoElement.appendChild(checkboxElement);
         ToDoElement.appendChild(textElement);
         ToDoElement.appendChild(linkElement);
-        if (item.concluida) ToDoElement.classList.add('concluida'); // Marca como concluída
+        if (item.concluida) ToDoElement.classList.add('concluida'); // marca como concluída
         listElement.appendChild(ToDoElement);
     });
 }
