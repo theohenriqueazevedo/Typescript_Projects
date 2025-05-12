@@ -1,6 +1,6 @@
 # 📘 TypeScript Projects – To-Do List & Operations
 
-Este repositório contém projetos desenvolvidos com **TypeScript**, focados no desenvolvimento de uma **lista de tarefas (To-Do List)** com funcionalidades comuns de CRUD e operações auxiliares.
+Este repositório contém projetos desenvolvidos com **TypeScript**, focados no desenvolvimento de uma **lista de tarefas (To-Do List)** com funcionalidades comuns de CRUD e uma interface de **Opreações de soma e subtração**.
 
 ## 🚀 Tecnologias utilizadas
 
