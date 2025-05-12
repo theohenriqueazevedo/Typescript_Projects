@@ -1,16 +1,16 @@
 "use strict";
-// Pegando as referências dos inputs e botões
+//pegando as referências
 const input1 = document.querySelector('#num1');
 const input2 = document.querySelector('#num2');
 const btnSoma = document.querySelector('#btnsomar');
 const btnSubtrair = document.querySelector('#btnsub');
 const btnLimpar = document.querySelector('#btnlimpar');
-// Criando o elemento p dinamicamente
+//criando o elemento p dinamicamente
 const resparagrafo = document.createElement('p');
 resparagrafo.id = 'resultado';
 resparagrafo.style.marginTop = '20px';
 resparagrafo.style.fontSize = '24px';
-// Adiciona o p no final do body ou de um container específico
+//adiciona o p no final do body
 document.body.appendChild(resparagrafo);
 function opercao({ tipo, a, b }) {
     if (tipo === "Soma") {
