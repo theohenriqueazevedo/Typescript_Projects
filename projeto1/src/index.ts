@@ -1,17 +1,17 @@
-// Pegando as referências dos inputs e botões
+//pegando as referências
 const input1 = document.querySelector('#num1') as HTMLInputElement;
 const input2 = document.querySelector('#num2') as HTMLInputElement;
 const btnSoma = document.querySelector('#btnsomar') as HTMLElement;
 const btnSubtrair = document.querySelector('#btnsub') as HTMLElement;
 const btnLimpar = document.querySelector('#btnlimpar') as HTMLElement;
 
-// Criando o elemento p dinamicamente
+//criando o elemento p dinamicamente
 const resparagrafo = document.createElement('p');
 resparagrafo.id = 'resultado';
 resparagrafo.style.marginTop = '20px';
 resparagrafo.style.fontSize = '24px'; 
 
-// Adiciona o p no final do body ou de um container específico
+//adiciona o p no final do body
 document.body.appendChild(resparagrafo);
 
 type Operacoes = "Soma" | "Subtrair";
