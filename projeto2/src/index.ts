@@ -17,6 +17,7 @@ function listarTarefas() {
         
         // marcar como concluida
         let checkboxElement = document.createElement('input');
+        
         checkboxElement.type = 'checkbox';
         checkboxElement.checked = item.concluida; //estado do checkbox baseado em "concluida"
         
@@ -29,19 +30,23 @@ function listarTarefas() {
         //editar a tarefa ao clicar no texto
         let textElement = document.createElement('span');
         textElement.textContent = item.texto;
+        
         textElement.addEventListener('click', () => editarTarefa(index));
 
         //excluindo a tarefa
         let linkElement = document.createElement('a');
         linkElement.setAttribute('href', '#');
         linkElement.setAttribute('onclick', `deletarTarefa(${index})`);
+        
         let linkText = document.createTextNode("excluir");
         linkElement.appendChild(linkText);
 
         //adicionando os elementos na lista
         ToDoElement.appendChild(checkboxElement);
         ToDoElement.appendChild(textElement);
+        
         ToDoElement.appendChild(linkElement);
+        
         if (item.concluida) ToDoElement.classList.add('concluida'); // marca como concluída
         listElement.appendChild(ToDoElement);
     });
